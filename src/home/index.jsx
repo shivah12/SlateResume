@@ -20,7 +20,7 @@ export default function LandingPage() {
               Effortlessly Craft a Standout Resume with Our AI-Powered Builder
             </p>
             <Button size="lg" className="mt-4 bg-emerald-400 text-white hover:bg-emerald-500">
-              <a href="/dashboard">
+              <a href="/auth/sign-in">
                 Get Started
               </a>
             </Button>
