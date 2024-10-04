@@ -2,6 +2,8 @@ import { Button } from "../home/ui-components"
 import { Card, CardContent } from "../home/ui-components"
 import { AtomIcon, Edit, Share2 } from "lucide-react"
 import Header from "../components/custom/Header"
+import { UserButton, useUser } from '@clerk/clerk-react'
+import { Link } from 'react-router-dom'
 
 export default function LandingPage() {
   return (
@@ -19,11 +21,11 @@ export default function LandingPage() {
             <p className="max-w-[42rem] text-xl leading-normal text-gray-500 sm:text-2xl">
               Effortlessly Craft a Standout Resume with Our AI-Powered Builder
             </p>
-            <Button size="lg" className="mt-4 bg-emerald-400 text-white hover:bg-emerald-500">
-              <a href="/">
-                Get Started
-              </a>
-            </Button>
+            
+            <Link to={'/auth/sign-in'}>
+                    <Button size="lg" className="mt-4 bg-emerald-400 text-white hover:bg-emerald-500">Get Started</Button>
+            </Link>
+            
           </div>
         </div>
       </section>
